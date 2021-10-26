@@ -1,0 +1,99 @@
+{
+  "location": {
+    "value": "eastus"
+  },
+  "virtualMachineName": {
+    "value": "robotforme"
+  },
+  "adminUsername": {
+    "value": "denim"
+  },
+  "adminPassword": {
+    "value": "HIGHsecurep@11"
+  },
+  "instanceCount": {
+    "value": 2
+  },
+  "orchestratorUrl": {
+    "value": "https://uipathapp.azurewebsites.net"
+  },
+  "orchAdmin": {
+    "value": "admin"
+  },
+  "orchPassword": {
+    "value": "HIGHsecurep@11"
+  },
+  "Tenant": {
+    "value": "Default"
+  },
+  "RobotType": {
+    "value": "Unattended"
+  },
+  "RobotVersion": {
+    "value": "20.10.8"
+  },
+  "virtualMachineSize": {
+    "value": "Standard_DS2_v2"
+  },
+  "virtualNetworkNewOrExisting": {
+    "value": "new"
+  },
+  "virtualNetworkName": {
+    "value": "VirtualNetwork"
+  },
+  "addressPrefixes": {
+    "value": "10.1.0.0/24"
+  },
+  "subnetName": {
+    "value": "Subnet-1"
+  },
+  "subnetPrefix": {
+    "value": "10.1.0.0/28"
+  },
+  "virtualNetworkResourceGroupName": {
+    "value": "ES-RPA-NP"
+  },
+  "publicIpNewOrExisting": {
+    "value": "new"
+  },
+  "publicIpName": {
+    "value": "robotforme-ip"
+  },
+  "publicIpDns": {
+    "value": "robotforme-2b4c85e07b"
+  },
+  "publicIpSku": {
+    "value": "Basic"
+  },
+  "publicIPAllocationMethod": {
+    "value": "Dynamic"
+  },
+  "publicIpResourceGroupName": {
+    "value": "ES-RPA-NP"
+  },
+  "tagsByResource": {
+    "value": {
+      "Microsoft.Compute/virtualMachines/extensions": {
+        "env": "np"
+      },
+      "Microsoft.Resources/deployments": {
+        "env": "np"
+      },
+      "Microsoft.Network/networkInterfaces": {
+        "env": "np"
+      },
+      "Microsoft.Network/networkSecurityGroups": {
+        "env": "np"
+      },
+      "Microsoft.Network/publicIpAddresses": {
+        "env": "np"
+      },
+      "Microsoft.Compute/virtualMachines": {
+        "env": "np"
+      },
+      "Microsoft.Network/virtualNetworks": {
+        "env": "np"
+      }
+    }
+  }
+}
