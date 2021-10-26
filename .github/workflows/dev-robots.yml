@@ -1,13 +1,10 @@
 name: UIpath Machines and Robots
 # Controls when the action will run. 
 on:
-  pull_request:
-    branches:
-      - development
-    paths:
-      - dev/robots/**
-      
-  workflow_dispatch:
+  workflow_run:
+    workflows: ["UIpath Primary"]
+    types:
+      - completed
       
 jobs:
     deploy:
