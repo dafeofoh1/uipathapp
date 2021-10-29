@@ -3,7 +3,7 @@ name: UIpath Disaster Recovery
 # Controls when the action will run. 
 on:
   workflow_run:
-    workflows: ["UIpath Primary"]
+    workflows: ["UIpath Machines and Robots"]
     types:
       - completed
       
