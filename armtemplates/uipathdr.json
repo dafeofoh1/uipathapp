@@ -313,6 +313,7 @@
     "variables": {
         "maSQLServerName": "[trim(toLower(concat(parameters('SQLServerName'))))]",
         "maindbName": "[parameters('OrchDatabaseName')]",
+        "sqlServerConnectionString": "[concat('Data Source=tcp:', variables('maSQLServerName'),'.database.windows.net,1433;Initial Catalog=', variables('maindbName'), ';User Id=', parameters('SQLServerAdminLogin'), '@', variables('maSQLServerName'), ';Password=', parameters('SQLServerAdminPassword'), ';')]",
         "appInsight": "[parameters('OrchAppInsights')]",
         "azureLocationMap": {
             "eastasia": "southeastasia",
@@ -551,7 +552,7 @@
                         "value": "[variables('appInsight')]"
                     },
                     "SQLconnectionString": {
-                        "value": "[concat('Data Source=tcp:', variables('maSQLServerName'),'.database.windows.net,1433;Initial Catalog=', variables('maindbName'), ';User Id=', parameters('SQLServerAdminLogin'), '@', variables('maSQLServerName'), ';Password=', parameters('SQLServerAdminPassword'), ';')]"
+                        "value": "[variables('sqlServerConnectionString')]",
                     },
                     "SQLconnectionType": {
                         "value": "SQLAzure"
