@@ -2,11 +2,10 @@
 name: UIpath Disaster Recovery
 # Controls when the action will run. 
 on:
-  pull_request:
-    branches:
-      - development
-    paths:
-      -  dev/secondary
+  workflow_run:
+    workflows: ["UIpath Primary"]
+    types:
+      - completed
       
   workflow_dispatch:
       
