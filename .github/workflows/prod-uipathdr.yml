@@ -2,11 +2,10 @@
 name: UIpath Disaster Recovery PROD
 # Controls when the action will run. 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      -  prod/secondary/**
+  workflow_run:
+    workflows: ["UIpath Machines and Robots  primary PROD"]
+    types:
+      - completed
       
   workflow_dispatch:
       
@@ -30,6 +29,30 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS_PROD_DR }}
       - name: Checkout source code
         uses: actions/checkout@v2
+      - name: Detach uipathappproddr
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az functionapp vnet-integration remove \
+            -g ES-RPA-PROD-DR \
+            -n uipathappproddr \
+            --subscription e5379bc3-8dfe-45a9-9b16-0044fd8f5761
+      - name: Detach orch624b2isprod
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az functionapp vnet-integration remove \
+            -g ES-RPA-PROD-DR \
+            -n orch624b2isprod \
+            --subscription e5379bc3-8dfe-45a9-9b16-0044fd8f5761
+      - name: Detach orch10066whprod
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az functionapp vnet-integration remove \
+            -g ES-RPA-PROD-DR \
+            -n orch10066whprod \
+            --subscription e5379bc3-8dfe-45a9-9b16-0044fd8f5761
       - name: Deploy ARM Template
         uses: azure/CLI@v1
         with:
