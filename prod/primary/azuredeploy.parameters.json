@@ -1,0 +1,176 @@
+{
+  "location": {
+    "value": "eastus"
+  },
+  "appName": {
+    "value": "uipathappprod"
+  },
+  "orchestratorAdminPassword": {
+    "value": "HIGHsecurep@11"
+  },
+  "orchestratorVersion": {
+    "value": "21.4.1"
+  },
+  "orchestratorSize": {
+    "value": "Large"
+  },
+  "isTestAutomationEnabled": {
+    "value": true
+  },
+  "orchestratorInstances": {
+    "value": 3
+  },
+  "EnableHAA": {
+    "value": true
+  },
+  "HAAVMAdminLogin": {
+    "value": "denim"
+  },
+  "HAAVMAdminPassword": {
+    "value": "HIGHsecurep@11"
+  },
+  "HAAadminEmail": {
+    "value": "osmith998@yahoo.com"
+  },
+  "HAAAdminPassword": {
+    "value": "HIGHsecurep@11"
+  },
+  "HAALicense": {
+    "value": ""
+  },
+  "HAAvirtualNetworkNewOrExistingPaaS": {
+    "value": "new"
+  },
+  "HAAaddressPrefixesPaaS": {
+    "value": [
+      "10.3.0.0/16"
+    ]
+  },
+  "HAAsubnetPrefixPaaS": {
+    "value": "10.3.0.0/24"
+  },
+  "HAAwebAppsubnetPrefixPaaS": {
+    "value": "10.3.1.0/24"
+  },
+  "HAAvirtualNetworkResourceGroupNamePaaS": {
+    "value": "ES-RPA-PROD"
+  },
+  "HAAvirtualMachineSize": {
+    "value": "Standard_D2s_v3"
+  },
+  "SQLServerName": {
+    "value": "orch18b44sqlprod"
+  },
+  "SQLServerAdminLogin": {
+    "value": "denim"
+  },
+  "SQLServerAdminPassword": {
+    "value": "HIGHsecurep@11"
+  },
+  "TokenCertificate": {
+    "value": "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"
+  },
+  "TokenCertificatePass": {
+    "value": "HIGHsecurep@11"
+  },
+  "tagsByResource": {
+    "value": {
+      "Microsoft.Web/Sites": {
+        "env": "p"
+      },
+      "Microsoft.Web/serverFarms": {
+        "env": "p"
+      },
+      "Microsoft.Insights/components": {
+        "env": "p"
+      },
+      "Microsoft.Resources/deploymentScripts": {
+        "env": "p"
+      },
+      "Microsoft.ManagedIdentity/userAssignedIdentities": {
+        "env": "p"
+      },
+      "Microsoft.Compute/virtualMachines/extensions": {
+        "env": "p"
+      },
+      "microsoft.insights/autoscalesettings": {
+        "env": "p"
+      },
+      "Microsoft.Resources/deployments": {
+        "env": "p"
+      },
+      "Microsoft.Web/certificates": {
+        "env": "p"
+      },
+      "Microsoft.Network/networkInterfaces": {
+        "env": "p"
+      },
+      "Microsoft.Network/networkSecurityGroups": {
+        "env": "np"
+      },
+      "Microsoft.Network/publicIPAddresses": {
+        "env": "p"
+      },
+      "Microsoft.Sql/servers/databases": {
+        "env": "p"
+      },
+      "Microsoft.Sql/servers": {
+        "env": "p"
+      },
+      "Microsoft.Storage/storageAccounts": {
+        "env": "p"
+      },
+      "Microsoft.Compute/virtualMachines": {
+        "env": "p"
+      },
+      "Microsoft.Network/virtualNetworks": {
+        "env": "p"
+      }
+    }
+  },
+  "OrchStorageAccountName": {
+    "value": "orchdc9e9stprod"
+  },
+  "OrchDatabaseName": {
+    "value": "orch1a283dbprod"
+  },
+  "OrchAppServicePlan": {
+    "value": "orchf7339aspprod"
+  },
+  "OrchAppInsights": {
+    "value": "orchc592bappinsprod"
+  },
+  "OrchIdentityAppServiceName": {
+    "value": "orch77385isprod"
+  },
+  "OrchWebhooksAppServiceName": {
+    "value": "orch6051cwhprod"
+  },
+  "OrchCertificate": {
+    "value": "orch2acb2crtprod"
+  },
+  "OrchMSIName": {
+    "value": "orch809a3msiprod"
+  },
+  "HAAAvailabilitySetName": {
+    "value": "orchf2903haaasprod"
+  },
+  "HAANSGName": {
+    "value": "orchd05e3haansgprod"
+  },
+  "HAAVnetName": {
+    "value": "haaVNet01prod"
+  },
+  "HAASubnetName": {
+    "value": "haa-subnetprod"
+  },
+  "HAAWASubnetName": {
+    "value": "haa-integration-newprod"
+  },
+  "HAANICNamePrefix": {
+    "value": "orch67f0fhaanicprod"
+  },
+  "HAAVMNamePrefix": {
+    "value": "orch1444bhaavmprod"
+  }
+}

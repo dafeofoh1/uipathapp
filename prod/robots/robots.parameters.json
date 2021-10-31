@@ -1,0 +1,99 @@
+{
+  "location": {
+    "value": "eastus"
+  },
+  "virtualMachineName": {
+    "value": "robotformeprod"
+  },
+  "adminUsername": {
+    "value": "denim"
+  },
+  "adminPassword": {
+    "value": "HIGHsecurep@11"
+  },
+  "instanceCount": {
+    "value": 2
+  },
+  "orchestratorUrl": {
+    "value": "https://uipathappprod.azurewebsites.net"
+  },
+  "orchAdmin": {
+    "value": "admin"
+  },
+  "orchPassword": {
+    "value": "HIGHsecurep@11"
+  },
+  "Tenant": {
+    "value": "Default"
+  },
+  "RobotType": {
+    "value": "Unattended"
+  },
+  "RobotVersion": {
+    "value": "20.10.8"
+  },
+  "virtualMachineSize": {
+    "value": "Standard_DS2_v2"
+  },
+  "virtualNetworkNewOrExisting": {
+    "value": "new"
+  },
+  "virtualNetworkName": {
+    "value": "VirtualNetworkprod"
+  },
+  "addressPrefixes": {
+    "value": "10.4.0.0/24"
+  },
+  "subnetName": {
+    "value": "Subnet-1prod"
+  },
+  "subnetPrefix": {
+    "value": "10.4.0.0/28"
+  },
+  "virtualNetworkResourceGroupName": {
+    "value": "ES-RPA-PROD"
+  },
+  "publicIpNewOrExisting": {
+    "value": "new"
+  },
+  "publicIpName": {
+    "value": "robotforme-ipprod"
+  },
+  "publicIpDns": {
+    "value": "robotforme-2b4c85e07bprod"
+  },
+  "publicIpSku": {
+    "value": "Basic"
+  },
+  "publicIPAllocationMethod": {
+    "value": "Dynamic"
+  },
+  "publicIpResourceGroupName": {
+    "value": "ES-RPA-PROD"
+  },
+  "tagsByResource": {
+    "value": {
+      "Microsoft.Compute/virtualMachines/extensions": {
+        "env": "p"
+      },
+      "Microsoft.Resources/deployments": {
+        "env": "p"
+      },
+      "Microsoft.Network/networkInterfaces": {
+        "env": "p"
+      },
+      "Microsoft.Network/networkSecurityGroups": {
+        "env": "p"
+      },
+      "Microsoft.Network/publicIpAddresses": {
+        "env": "p"
+      },
+      "Microsoft.Compute/virtualMachines": {
+        "env": "p"
+      },
+      "Microsoft.Network/virtualNetworks": {
+        "env": "p"
+      }
+    }
+  }
+}
