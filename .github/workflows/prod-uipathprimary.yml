@@ -29,6 +29,30 @@ jobs:
           creds: ${{ secrets.AZURE_CREDENTIALS_PROD }}
       - name: Checkout source code
         uses: actions/checkout@v2
+      - name: Detach uipathappprod
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az functionapp vnet-integration remove \
+            -g ES-RPA-PROD \
+            -n uipathappprod \
+            --subscription e5379bc3-8dfe-45a9-9b16-0044fd8f5761
+      - name: Detach orch77385isprod
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az functionapp vnet-integration remove \
+            -g ES-RPA-PROD \
+            -n orch77385isprod \
+            --subscription e5379bc3-8dfe-45a9-9b16-0044fd8f5761
+      - name: Detach orch6051cwhprod
+        uses: azure/CLI@v1
+        with:
+          inlineScript: |
+            az functionapp vnet-integration remove \
+            -g ES-RPA-PROD \
+            -n orch6051cwhprod \
+            --subscription e5379bc3-8dfe-45a9-9b16-0044fd8f5761
       - name: Deploy ARM Template
         uses: azure/CLI@v1
         with:
