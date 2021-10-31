@@ -311,7 +311,7 @@
         }
     },
     "variables": {
-        "SQLServerName": "[trim(toLower(concat(parameters('SQLServerName'),'-', uniqueString(resourceGroup().id) )))]",
+        "SQLServerName": "[parameters('SQLServerName')]",
         "dbName": "[parameters('OrchDatabaseName')]",
         "dbEdition": "[if(contains(parameters('orchestratorSize'), 'Small'), 'Standard', if(contains(parameters('orchestratorSize'), 'Medium'), 'Standard', 'Premium'))]",
         "dbPerformanceLevel": "[if(contains(parameters('orchestratorSize'), 'Small'), 'S1', if(contains(parameters('orchestratorSize'), 'Medium'), 'S3', 'P4'))]",
